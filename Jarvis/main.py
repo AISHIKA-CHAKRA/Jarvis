@@ -29,7 +29,7 @@ def processCommand(c):
     elif c.lower().startswith("play"):
         try:
             song = c.lower().split(" ")[1]
-            link = music_library[song]
+            link = music_library.music[song]
             webbrowser.open(link)
 
         except KeyError:
